@@ -8,10 +8,7 @@ from sklearn.pipeline import Pipeline
 nlp = spacy.load("en_core_web_sm")
 
 # Create a pipeline with CountVectorizer and RandomForestClassifier
-pipeline = Pipeline([
-    ("vectorizer", CountVectorizer()),
-    ("classifier", RandomForestClassifier())
-])
+pipeline = None
 
 
 # load model
