@@ -20,10 +20,6 @@ pipeline = Pipeline([
 with open("model.pkl", "rb") as f:
     pipeline = pickle.load(f)
 
-
-# Train the classifier
-pipeline.fit(X_train, y_train)
-
 while True:
     # Example input sentence to predict action
     input_sentence = input("Say: ")  # "Remind me to buy groceries tomorrow"
