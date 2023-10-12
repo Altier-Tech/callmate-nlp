@@ -15,6 +15,10 @@ pipeline = Pipeline([
 ])
 
 
+# load model
+with open("model.pkl", "rb") as f:
+    pipeline = pickle.load(f)
+
 
 # Train the classifier
 pipeline.fit(X_train, y_train)
