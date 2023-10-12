@@ -28,4 +28,4 @@ pipeline = Pipeline([
 # Train the classifier
 pipeline.fit(X_train, y_train)
 
-
+# Save the model
