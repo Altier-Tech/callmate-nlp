@@ -23,7 +23,7 @@ def extract_date_time(input_string):
     for ent in doc.ents:
         if ent.label_ == "DATE":
             # Parse the date using dateutil.parser
-            extracted_date = parser.parse(ent.text).date()
+            extracted_date = parser.parse(ent.text)
         elif ent.label_ == "TIME":
             # Parse the time using dateutil.parser
             extracted_time = parser.parse(ent.text).time()
