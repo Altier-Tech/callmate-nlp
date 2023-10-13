@@ -41,4 +41,4 @@ ext_date, ext_time = extract_date_time(input_str)
 
 # Print the extracted date and time
 print("Extracted Date:", ext_date)
-print("Extracted Time:", extracted_time)
+print("Extracted Time:", ext_time)
