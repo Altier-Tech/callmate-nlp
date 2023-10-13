@@ -39,7 +39,7 @@ def extract_date_time(input_string):
 input_str = "Hey, I have a meeting this thursday at 10 am."
 
 # Extract date, time, and day of the week from input string
-ext_date, ext_time, extracted_day = extract_date_time(input_str)
+ext_date, ext_time, ext_day = extract_date_time(input_str)
 
 # Print the extracted date, time, and day of the week
 print("Extracted date:", extracted_date)
