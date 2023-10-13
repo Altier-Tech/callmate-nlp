@@ -1,6 +1,5 @@
-import spacy
-from dateutil.relativedelta import relativedelta
 from datetime import datetime
+import spacy
 from dateutil import parser
 
 # Load the English language model from spaCy
@@ -36,7 +35,7 @@ def extract_date_time(input_string):
 
 
 # Example input string
-input_str = "Hey, I have a meeting this thursday at 10 am."
+input_str = "Hey, I have a meeting today at 10 am."
 
 # Extract date, time, and day of the week from input string
 ext_date, ext_time, ext_day = extract_date_time(input_str)
