@@ -27,16 +27,13 @@ def extract_date_time(input_string):
         elif ent.label_ == "TIME":
             # Parse the time using dateutil.parser
             extracted_time = parser.parse(ent.text).time()
-        elif ent.text.lower() == "tomorrow":
-            # Calculate tomorrow's date based on the current date
-            extracted_date = current_datetime.date() + relativedelta(days=+1)
 
     # Return the extracted date and time
     return extracted_date, extracted_time
 
 
 # Example input string
-input_str = "Hey, I have a meeting tomorrow at 10 am."
+input_str = "Hey, I have a meeting this thursday at 10 am."
 
 # Extract date and time from the input string
 ext_date, ext_time = extract_date_time(input_str)
