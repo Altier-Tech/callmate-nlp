@@ -27,11 +27,11 @@ def extract_date_time(input_string):
 
 
 # Example input string
-input_string = "Hey, I have a meeting tomorrow at 10 am."
+input_str = "Hey, I have a meeting tomorrow at 10 am."
 
 # Extract date and time from the input string
-extracted_date, extracted_time = extract_date_time(input_string)
+ext_date, ext_time = extract_date_time(input_str)
 
 # Print the extracted date and time
-print("Extracted Date:", extracted_date)
-print("Extracted Time:", extracted_time)
+print("Extracted Date:", ext_date)
+print("Extracted Time:", ext_time)
