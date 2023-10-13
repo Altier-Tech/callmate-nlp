@@ -12,7 +12,7 @@ while True:
     # Example input sentence to predict action
     input_sentence = input("Say: ")  # "Remind me to buy groceries tomorrow"
 
-    if input_sentence == "end":
+    if input_sentence == "q":
         exit()
 
     # Process the input sentence using spaCy and extract POS tags
