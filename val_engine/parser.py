@@ -40,5 +40,5 @@ input_str = "Hey, I have a meeting tomorrow at 10 am."
 ext_date, ext_time = extract_date_time(input_str)
 
 # Print the extracted date and time
-print("Extracted Date:", extracted_date)
+print("Extracted Date:", ext_date)
 print("Extracted Time:", extracted_time)
