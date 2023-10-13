@@ -43,5 +43,5 @@ ext_date, ext_time, ext_day = extract_date_time(input_str)
 
 # Print the extracted date, time, and day of the week
 print("Extracted date:", ext_date)
-print("Extracted time:", extracted_time)
+print("Extracted time:", ext_time)
 print("Extracted day:", extracted_day)
