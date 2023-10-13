@@ -37,7 +37,7 @@ def extract_date_time(input_string):
 input_str = "Hey, I have a meeting tomorrow at 10 am."
 
 # Extract date and time from the input string
-extracted_date, extracted_time = extract_date_time(input_str)
+ext_date, ext_time = extract_date_time(input_str)
 
 # Print the extracted date and time
 print("Extracted Date:", extracted_date)
