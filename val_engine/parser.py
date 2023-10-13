@@ -31,6 +31,7 @@ def extract_date_time(input_string):
             # Calculate tomorrow's date based on the current date
             extracted_date = current_datetime.date() + relativedelta(days=+1)
 
+    # Return the extracted date and time
     return extracted_date, extracted_time
 
 
