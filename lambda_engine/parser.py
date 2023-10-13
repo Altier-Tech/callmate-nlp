@@ -5,7 +5,7 @@ import spacy
 nlp = spacy.load("en_core_web_sm")
 
 # load model
-with open("../bin/model.pkl", "rb") as f:
+with open("../bin/lambda_model.pkl", "rb") as f:
     pipeline = pickle.load(f)
 
 while True:
