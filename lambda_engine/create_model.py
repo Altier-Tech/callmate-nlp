@@ -30,5 +30,5 @@ pipeline = Pipeline([
 pipeline.fit(X_train, y_train)
 
 # Save the model
-with open("model.pkl", "wb") as f:
+with open("../bin/model.pkl", "wb") as f:
     pickle.dump(pipeline, f)
