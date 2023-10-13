@@ -42,6 +42,6 @@ input_str = "Hey, I have a meeting this thursday at 10 am."
 ext_date, ext_time, ext_day = extract_date_time(input_str)
 
 # Print the extracted date, time, and day of the week
-print("Extracted date:", extracted_date)
+print("Extracted date:", ext_date)
 print("Extracted time:", extracted_time)
 print("Extracted day:", extracted_day)
