@@ -19,6 +19,8 @@ def extract_date_time(input_string):
     extracted_date = None
     extracted_time = None
     extracted_day = None
+    
+    cal = parsedatetime.Calendar()
 
     # Extract entities (including date, time, and day of the week) using spaCy's NER
     for ent in doc.ents:
