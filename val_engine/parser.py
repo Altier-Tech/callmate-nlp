@@ -23,7 +23,8 @@ def extract_date_time(input_string):
     for ent in doc.ents:
         if ent.label_ == "DATE":
             # Parse the date using dateutil.parser
-            extracted_date, tokens = parser.parse(ent.text, fuzzy_with_tokens=True)
+            # extracted_date, tokens = parser.parse(ent.text, fuzzy_with_tokens=True)
+            extracted_date, tokens = cal.parse(ent.text)
             # Extract the day of the week from the parsed date
             extracted_day = extracted_date.strftime("%A")
         elif ent.label_ == "TIME":
