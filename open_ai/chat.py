@@ -18,6 +18,8 @@ async def chat(user_input: str):
         max_tokens=150  # You can adjust the response length as needed
     )
 
+    assistant_reply = response.choices[0].text.strip()
+
     conversation_history.append({"role": "assistant", "content": assistant_reply})
 
     return response.choices[0].text.strip()
