@@ -7,6 +7,9 @@ conversation_history = [
 ]
 
 
+
+
+
 if __name__ == '__main__':
     while True:
         user_input = input("User: ")
