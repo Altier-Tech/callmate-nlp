@@ -17,8 +17,7 @@ async def chat(u_input: str):
         max_tokens=150  # You can adjust the response length as needed
     )
 
-    assistant_reply = response.choices[0].text.strip()
-    print(f"ChatGPT: {assistant_reply}")
+    return response.choices[0].text.strip()
 
 
 
