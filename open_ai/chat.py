@@ -21,8 +21,6 @@ async def chat(u_input: str):
     assistant_reply = response.choices[0].text.strip()
     print(f"ChatGPT: {assistant_reply}")
 
-    # Store the assistant's reply in the conversation history
-    conversation_history.append({"role": "assistant", "content": assistant_reply})
 
 
 if __name__ == '__main__':
