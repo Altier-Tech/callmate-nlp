@@ -10,7 +10,6 @@ conversation_history = [
 async def chat(u_input: str):
     chat_input = "\n".join(f"{msg['role']}: {msg['content']}" for msg in conversation_history)
 
-    # Generate a response from the AI model
     response = openai.Completion.create(
         engine="text-davinci-003",
         prompt=chat_input,
