@@ -7,7 +7,7 @@ conversation_history = [
 ]
 
 
-async def chat(input: str):
+async def chat(user_input: str):
     chat_input = "\n".join(f"{msg['role']}: {msg['content']}" for msg in conversation_history)
 
     # Generate a response from the AI model
