@@ -20,10 +20,6 @@ async def chat(u_input: str):
         max_tokens=150  # You can adjust the response length as needed
     )
 
-    # Extract and print the assistant's reply
-    assistant_reply = response.choices[0].text.strip()
-    print(f"ChatGPT: {assistant_reply}")
-
     # Store the assistant's reply in the conversation history
     conversation_history.append({"role": "assistant", "content": assistant_reply})
 
