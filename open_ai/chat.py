@@ -7,7 +7,7 @@ conversation_history = [
 ]
 
 
-
+if __name__ == '__main__':
 while True:
     user_input = input("User: ")
     if user_input.lower() in ['exit', 'quit', 'bye']:
