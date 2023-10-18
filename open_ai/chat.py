@@ -7,7 +7,6 @@ conversation_history = [
 ]
 
 async def chat(input: str):
-conversation_history.append({"role": "user", "content": user_input})
 
 # Format conversation history as a single string
 chat_input = "\n".join(f"{msg['role']}: {msg['content']}" for msg in conversation_history)
