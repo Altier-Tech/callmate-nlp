@@ -24,6 +24,8 @@ while True:
         max_tokens=150  # You can adjust the response length as needed
     )
 
+    print(response)
+
     # Extract and print the assistant's reply
     assistant_reply = response.choices[0].text.strip()
     print(f"ChatGPT: {assistant_reply}")
