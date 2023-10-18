@@ -22,4 +22,4 @@ async def chat(user_input: str):
 
     conversation_history.append({"role": "assistant", "content": assistant_reply})
 
-    return response.choices[0].text.strip()
+    return assistant_reply
