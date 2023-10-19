@@ -10,6 +10,8 @@ with open("../bin/lambda_model.pkl", "rb") as f:
 
 
 
+
+
 if __name__ == '__main__':
     while True:
         # Example input sentence to predict action
