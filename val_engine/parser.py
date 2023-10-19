@@ -29,6 +29,8 @@ def extract_date_time(input_string):
             extracted_date = datetime(*time_struct[:6])
             # Extract only the date part
             extracted_date = extracted_date.date()
+            # Extract the day of the week from the parsed date
+            extracted_day = extracted_date.strftime("%A")
         elif ent.label_ == "TIME":
             # Parse the time using parsedatetime
             time_struct, parse_status = cal.parse(ent.text)
