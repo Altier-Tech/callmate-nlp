@@ -13,6 +13,7 @@ training_data = [
     ("Send an email to John", "send_email"),
     ("I have a meeting tomorrow at 3 PM", "set_reminder"),
     ("I will not be able to answer calls from 2 PM today", "set_auto_answer"),
+    ("i will be busy from 10 am to 2 pm today", )
     # TODO Add more labeled data as needed
 ]
 
