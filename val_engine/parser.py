@@ -27,6 +27,8 @@ def extract_date_time(input_string):
             time_struct, parse_status = cal.parse(ent.text)
             # Convert time.struct_time to datetime object
             extracted_date = datetime(*time_struct[:6])
+            # Extract only the date part
+            extracted_date = extracted_date.date()
         elif ent.label_ == "TIME":
             # Parse the time using parsedatetime
             time_struct, parse_status = cal.parse(ent.text)
