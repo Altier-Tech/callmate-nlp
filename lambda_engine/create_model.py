@@ -14,7 +14,7 @@ training_data = [
     ("I have a meeting tomorrow at 3 PM", "set_reminder"),
     ("I will not be able to answer calls from 2 PM today", "set_auto_answer"),
     ("i will be busy from 10 am to 2 pm today", "set_auto_answer"),
-    ("tell my personal assistant of what to do", )
+    ("tell my personal assistant of what to do", "forward_to_pa")
     # TODO Add more labeled data as needed
 ]
 
