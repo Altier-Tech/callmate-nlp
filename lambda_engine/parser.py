@@ -31,4 +31,4 @@ if __name__ == '__main__':
         # Predict the action for the input sentence
         predicted_action = pipeline.predict([processed_sentence])
 
-        print("Predicted Action:", parse_action)
+        print("Predicted Action:", parse_action())
