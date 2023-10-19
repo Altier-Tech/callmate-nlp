@@ -9,7 +9,7 @@ with open("../bin/lambda_model.pkl", "rb") as f:
     pipeline = pickle.load(f)
 
 
-asyc def 
+asnyc def 
 
 
 if __name__ == '__main__':
