@@ -7,7 +7,7 @@ conversation_history = [
 ]
 
 
-async def chat(user_input: str):
+def chat(user_input: str):
     conversation_history.append({"role": "user", "content": user_input})
 
     chat_input = "\n".join(f"{msg['role']}: {msg['content']}" for msg in conversation_history)
@@ -23,3 +23,10 @@ async def chat(user_input: str):
     conversation_history.append({"role": "assistant", "content": assistant_reply})
 
     return assistant_reply
+
+
+if __name__ == '__main__':
+    st = input("say: ")
+    a = chat(st)
+
+    print(a)
