@@ -6,9 +6,9 @@ import parsedatetime
 # Load the English language model from spaCy
 nlp = spacy.load("en_core_web_sm")
 
-
 # Initialize parsedatetime.Calendar() instance
 cal = parsedatetime.Calendar()
+
 
 # Function to extract date, time, and day of the week from input string
 def extract_date_time(input_string):
