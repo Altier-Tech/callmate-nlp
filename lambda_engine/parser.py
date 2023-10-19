@@ -10,7 +10,7 @@ with open("../bin/lambda_model.pkl", "rb") as f:
 
 
 
-if 
+if __name__
 while True:
     # Example input sentence to predict action
     input_sentence = input("Say (or q to exit): ")  # "Remind me to buy groceries tomorrow"
