@@ -9,7 +9,8 @@ with open("../bin/lambda_model.pkl", "rb") as f:
     pipeline = pickle.load(f)
 
 
-async def parse_action(text: str)
+async def parse_action(text: str):
+    
 
 
 if __name__ == '__main__':
