@@ -9,7 +9,7 @@ with open("../bin/lambda_model.pkl", "rb") as f:
     pipeline = pickle.load(f)
 
 
-async def parse_action(text: str):
+def parse_action(text: str):
     processed_sentence = " ".join([token.pos_ for token in nlp(text)])
 
     predicted_action = pipeline.predict([processed_sentence])
