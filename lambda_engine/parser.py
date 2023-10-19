@@ -10,7 +10,10 @@ with open("../bin/lambda_model.pkl", "rb") as f:
 
 
 async def parse_action(text: str):
-    
+    processed_sentence = " ".join([token.pos_ for token in nlp(input_sentence)])
+
+    # Predict the action for the input sentence
+    predicted_action = pipeline.predict([processed_sentence])
 
 
 if __name__ == '__main__':
