@@ -14,7 +14,7 @@ async def parse_action(text: str):
 
     predicted_action = pipeline.predict([processed_sentence])
 
-    return 
+    return predicted_action[0]
 
 
 if __name__ == '__main__':
