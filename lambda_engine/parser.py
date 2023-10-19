@@ -25,10 +25,4 @@ if __name__ == '__main__':
         if input_sentence == "q":
             exit()
 
-        # Process the input sentence using spaCy and extract POS tags
-        processed_sentence = " ".join([token.pos_ for token in nlp(input_sentence)])
-
-        # Predict the action for the input sentence
-        predicted_action = pipeline.predict([processed_sentence])
-
         print("Predicted Action:", parse_action(input_sentence))
