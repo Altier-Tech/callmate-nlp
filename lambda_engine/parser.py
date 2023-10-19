@@ -8,6 +8,9 @@ nlp = spacy.load("en_core_web_sm")
 with open("../bin/lambda_model.pkl", "rb") as f:
     pipeline = pickle.load(f)
 
+
+
+
 while True:
     # Example input sentence to predict action
     input_sentence = input("Say (or q to exit): ")  # "Remind me to buy groceries tomorrow"
